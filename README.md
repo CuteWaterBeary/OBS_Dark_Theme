@@ -1,4 +1,4 @@
 # DarkyBobby
 OBS Studio thème 
 
-![Screenshot](screenshot.png)
+![Screenshot](./screenshot.PNG)
