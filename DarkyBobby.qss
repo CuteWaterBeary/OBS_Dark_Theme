@@ -1,3 +1,7 @@
+/* 
+* hello here ! check my Twitter @astro_weezy 
+*/
+
 /* OBSTheme, main QApplication palette and QML values */
 OBSTheme {
 	window: rgb(32, 32, 32);
