@@ -9,18 +9,15 @@ OBSTheme {
 	base: rgb(247, 37, 133);
 	alternateBase: rgb(0, 0, 0);
 	text: rgb(240, 240, 240);
-	button: rgb(255, 38, 122);
+	button: rgba(255, 255, 255, 0.1);
 	buttonText: rgb(225, 225, 225);
 	brightText: rgb(212, 212, 212);
-
 	light: rgb(22, 36, 88);
-	mid: rgb(24, 24, 25);
+	mid: rgba(255, 255, 255, 0.1);
 	dark: rgb(18, 18, 21);
 	shadow: rgb(0, 0, 0);
-
 	highlight: rgb(37, 36, 88);
 	highlightedText: rgb(255, 255, 255);
-
 	link: rgb(90, 102, 255);
 	linkVisited: rgb(96, 94, 230);
 }
@@ -37,7 +34,6 @@ OBSTheme::inactive {
 }
 
 /* General style, we override only what is needed. */
-
 QWidget {
 	background-color: palette(window);
 	alternate-background-color: palette(base);
@@ -90,7 +86,6 @@ QSizeGrip {
 }
 
 /* Misc */
-
 QWidget::disabled {
 	color: palette(bright-text);
 }
@@ -110,7 +105,6 @@ QAbstractItemView {
 }
 
 /* Group Box */
-
 QGroupBox {
 	border-bottom: 1px solid rgb(40, 40, 42);
 	border-radius: 0px;
@@ -130,9 +124,6 @@ QGroupBox::title {
 	font-size: 16px;
 	color: rgb(255, 255, 255);
 }
-
-/* --- */
-
 
 /* Tooltips */
 QToolTip {
@@ -202,6 +193,13 @@ QDockWidget::float-button {
 	icon-size: 48px;
 }
 
+QDockWidget::close-button:hover,
+QDockWidget::float-button:hover {
+	border: none;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 5px;
+}
+
 QListWidget#scenes,
 SourceListWidget {
 	border-bottom-right-radius: 8px;
@@ -250,7 +248,6 @@ SourceTree::item:selected {
 }
 
 /* ScrollBars */
-
 QScrollBar::corner {
 	background-color: transparent;
 	border: none;
@@ -336,7 +333,6 @@ QPushButton#sourceFiltersButton {
 }
 
 /* Scenes and Sources toolbar */
-
 QToolBar {
 	margin-top: 4px;
 }
@@ -382,10 +378,8 @@ QToolButton:pressed {
 }
 
 /* Tab Widget */
-
 QTabWidget::pane {
 	border: none;
-	/* border-top: 5px solid rgb(47, 47, 47); */
 }
 
 QTabWidget::tab-bar {
@@ -420,7 +414,6 @@ QTabBar::tab:pressed {
 }
 
 /* ComboBox */
-
 QDateTimeEdit,
 QComboBox {
 	background-color: rgb(40, 40, 42);
@@ -432,7 +425,7 @@ QComboBox {
 
 QDateTimeEdit:hover,
 QComboBox:hover {
-	background-color: rgb(61, 61, 63);
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 QDateTimeEdit::drop-down,
@@ -473,7 +466,6 @@ QComboBox::down-arrow:editable {
 }
 
 /* Textedits etc */
-
 QLineEdit,
 QTextEdit,
 QPlainTextEdit {
@@ -484,7 +476,6 @@ QPlainTextEdit {
 }
 
 /* Spinbox and doubleSpinbox */
-
 QSpinBox,
 QDoubleSpinBox {
 	background-color: rgb(40, 40, 42);
@@ -556,7 +547,6 @@ QDoubleSpinBox::down-arrow {
 }
 
 /* Buttons */
-
 QPushButton {
 	color: rgb(255, 255, 255);
 	background-color: rgb(25, 25, 25);
@@ -609,7 +599,6 @@ QPushButton::flat:disabled {
 }
 
 /* Progress Bar */
-
 QProgressBar {
 	background: rgb(16, 16, 16);
 	border: 2px solid rgb(54, 54, 54);
@@ -622,7 +611,6 @@ QProgressBar::chunk {
 }
 
 /* Sliders */
-
 QSlider::groove:horizontal {
 	background-color: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1,
 			stop: 0 rgb(31, 30, 31),
@@ -708,7 +696,6 @@ QSlider::handle:disabled {
 }
 
 /* Volume Control */
-
 VolumeMeter {
 	qproperty-backgroundNominalColor: rgb(63, 71, 178);
 	qproperty-backgroundWarningColor: rgb(204, 147, 39);
@@ -719,17 +706,13 @@ VolumeMeter {
 	qproperty-foregroundErrorColor: rgb(255, 62, 90);
 
 	qproperty-magnitudeColor: #ffffff;
-	/* Blue-gray */
 	qproperty-majorTickColor: rgb(239, 240, 241);
-	/* White */
 	qproperty-minorTickColor: rgb(118, 121, 124);
-	/* Light Gray */
 	qproperty-peakDecayRate: 23.4;
 	/* Override of the standard PPM Type I rate. */
 }
 
 /* Status Bar */
-
 QStatusBar::item {
 	border: none;
 }
@@ -780,7 +763,6 @@ QGroupBox::indicator:unchecked:disabled {
 }
 
 /* Radio Buttons */
-
 QRadioButton::indicator {
 	width: 19px;
 	height: 19px;
@@ -789,7 +771,6 @@ QRadioButton::indicator {
 QRadioButton::indicator:unchecked {
 	image: url(./DarkyBobby/radio_unchecked.png);
 }
-
 
 QRadioButton::indicator:unchecked:hover,
 QRadioButton::indicator:unchecked:focus,
@@ -823,7 +804,6 @@ QRadioButton::indicator:unchecked:disabled {
 }
 
 /* Mute CheckBox */
-
 MuteCheckBox {
 	outline: none;
 }
@@ -864,9 +844,7 @@ OBSHotkeyLabel[hotkeyPairHover=true] {
 	color: rgba(27, 96, 166);
 }
 
-
 /* Group Collapse Checkbox */
-
 SourceTreeSubItemCheckBox {
 	background: transparent;
 	outline: none;
@@ -888,9 +866,7 @@ SourceTreeSubItemCheckBox::indicator:unchecked:hover {
 	image: url(./DarkyBobby/down.png);
 }
 
-
 /* Label warning/error */
-
 QLabel#warningLabel {
 	color: rgb(192, 128, 0);
 	font-weight: bold;
@@ -902,13 +878,11 @@ QLabel#errorLabel {
 }
 
 /* Settings Menu */
-
 #buttonBox {
 	border-top: 2px solid grey;
 }
 
 /* Special Fixes */
-
 OBSBasicProperties,
 #OBSBasicSettings,
 #OBSBasicFilters {
@@ -964,13 +938,11 @@ FocusList::item {
 }
 
 /* Preview background color */
-
 OBSQTDisplay {
 	qproperty-displayBackgroundColor: rgb(40, 40, 42);
 }
 
 /* Preview/Program labels */
-
 * [themeID="previewProgramLabels"] {
 	font-size: 18px;
 	font-weight: bold;
@@ -978,7 +950,6 @@ OBSQTDisplay {
 }
 
 /* Settings Icons */
-
 OBSBasicSettings {
 	qproperty-generalIcon: url(./DarkyBobby/settings/general.png);
 	qproperty-streamIcon: url(./DarkyBobby/settings/stream.png);
@@ -1001,7 +972,6 @@ OBSBasicSettings QListWidget {
 }
 
 /* Table */
-
 QTableView {
 	gridline-color: rgb(51, 51, 54);
 }
@@ -1020,7 +990,6 @@ QHeaderView::section {
 }
 
 /* Locked CheckBox */
-
 LockedCheckBox {
 	outline: none;
 	background: transparent;
@@ -1049,7 +1018,6 @@ LockedCheckBox::indicator:unchecked:hover {
 }
 
 /* Visibility CheckBox */
-
 VisibilityCheckBox {
 	outline: none;
 	background: transparent;
@@ -1103,7 +1071,6 @@ OBSMissingFiles {
 }
 
 /* Source Icons */
-
 OBSBasic {
 	qproperty-imageIcon: url(./DarkyBobby/sources/image.png);
 	qproperty-colorIcon: url(./DarkyBobby/sources/brush.png);
@@ -1123,7 +1090,6 @@ OBSBasic {
 }
 
 /* Scene Tree */
-
 SceneTree#scenes {
 	qproperty-gridItemWidth: 180;
 	qproperty-gridItemHeight: 35;
@@ -1142,7 +1108,6 @@ SceneTree#scenes {
 }
 
 /* Save replay icon */
-
 * [themeID="replayIconSmall"] {
 	qproperty-icon: url(./DarkyBobby/save.png);
 }
@@ -1179,7 +1144,6 @@ QSlider::handle:horizontal[themeID="tBarSlider"] {
 }
 
 /* Media icons */
-
 * [themeID="playIcon"] {
 	qproperty-icon: url(./DarkyBobby/media/media_play.png);
 }
@@ -1214,21 +1178,18 @@ OBSYoutubeActions {
 }
 
 #ytEventList QLabel {
-	color: rgb(225, 224, 225);
-	background-color: #162458;
-	border: 1px solid #233166;
+	color: #ffffff;
+	background-color: rgb(25, 25, 25);
 	padding: 6px 20px;
 	margin: 1px;
 }
 
 #ytEventList QLabel:hover {
-	background-color: #2a3a75;
-	border: 1px solid #364683;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 #ytEventList QLabel[isSelectedEvent=true] {
-	background-color: #581624;
-	border-color: #84162d;
+	background-color: rgb(98, 98, 98);
 }
 
 /* Calendar Widget */
@@ -1275,12 +1236,11 @@ QCalendarWidget #qt_calendar_nextmonth {
 }
 
 QCalendarWidget QToolButton:hover {
-	background-color: #2a3a75;
-	border: 1px solid #364683;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 QCalendarWidget QToolButton:pressed {
-	background-color: #161f41;
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Month Dropdown Menu */
