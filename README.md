@@ -9,6 +9,6 @@ copy the **"DarkyBobby"** folder and the **"DarkyBobby.qss"** file to your "them
 
 select the **"DarkyBobby"** theme in the OBS settings and voilà
 
-*by default the installation path is located: **C:\Program Files\obs-studio\data\obs-studio\themes** *
+*by default the installation path is located:* **C:\Program Files\obs-studio\data\obs-studio\themes**
 
 ![Screenshot](./screenshot.PNG)
