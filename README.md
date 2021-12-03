@@ -1,5 +1,5 @@
 # DarkyBobby
-### OBS Studio thème 
+### OBS Studio theme 
 
 ## how to install
 copy the "DarkyBobby" folder and the "DarkyBobby.qss" file to your "themes" directory
