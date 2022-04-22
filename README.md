@@ -1,5 +1,5 @@
 # DarkyBobby
-### OBS Studio (27.1.3) theme 
+### OBS Studio (27.2.4) theme 
 
 ## how to install
 
